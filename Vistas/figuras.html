@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/figuras.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Figuras</title>
+</head>
+<body>
+    <header class="fondo">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <img src="../img/baratheon.png" alt="Bootstrap" width="80" height="80">
+              <a class="navbar-brand" href="#">Menu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="../index.html">Reto1</a>
+                  <a class="nav-link" href="eventos.html">Reto2</a>
+                  <a class="nav-link" href="Temperatura.html">Reto3</a>
+                  <a class="nav-link" href="triangulo.html">Reto4</a>
+                  <a class="nav-link" href="recopilador.html">Reto5</a>
+                  <a class="nav-link" href="figuras.html">Reto6</a>
+                  <a class="nav-link" href="formulario.html">Reto7</a>
+                  <a class="navbar-brand" href="#">Figuras</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <div class="cuadrado">
+            <img src="../img/cuadrado.jpg" class="figura1" alt=""><br>
+            <button class="btn btn-outline-success btn-perimetro" data-figura="cuadrado">Perimetro</button>
+            <div class="perimetro" data-figura="cuadrado">
+                <div class="contenido">
+                    <span class="cerrar-modal">X</span>
+                    <h2>Perimetro de cuadrado</h2>
+                    <form action="">
+
+                    <div class="form-floating">
+                        <input type="number" class="form-control" name="lados" id="lados" value="">
+                        <label id="titulo">lados:</label>
+                    </div><br>
+            
+                        <button id="boton" onclick="perimetroCuadrado()" class="btn btn-danger btn-lg btn-block">Perimetro</button>
+                   </form>
+                </div>
+            </div>
+            <button class="btn btn-outline-danger btn-area" data-figura="cuadrado">Area</button>
+            <div class="area" data-figura="cuadrado">
+                <div class="contenido">
+                    <span class="cerrar-modal">X</span>
+                    <h2>Área del cuadrado</h2>
+                    <form action="">
+  <div class="form-floating">
+    <input type="number" class="form-control" name="lado" id="lado" value="">
+    <label for="lado">Lados:</label>
+  </div><br>
+  
+  <button type="button" onclick="areaCuadrado()" class="btn btn-danger btn-lg btn-block">Calcular área</button>
+</form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="triangulo">
+            <img src="../img/triangulo.jpg" class="figura2" alt=""><br>
+            <button class="btn btn-outline-success btn-perimetro" data-figura="triangulo">Perimetro</button>
+            <div class="perimetro" data-figura="triangulo">
+                <div class="contenido">
+                    <span class="cerrar-modal">X</span>
+                    <h2>Perimetro de triángulo</h2>
+                    <form action="">
+                        <div class="form-floating">
+
+                            <input type="number" class="form-control" name="lado1" id="lado1" value="">
+                            <label id="titulo">lado1:</label>
+                        </div><br>
+                        <div class="form-floating">
+                            
+                            <input type="number" class="form-control" name="lado2" id="lado2" value="">
+                            <label id="titulo">lado2:</label>
+                        </div><br>
+                        <div class="form-floating">
+                            
+                            <input type="number" class="form-control" name="lado3" id="lado3" value="">
+                            <label id="titulo">lado3:</label>
+                        </div><br>
+                
+                            <button id="boton" onclick="perimitroTriangulo()" class="btn btn-danger btn-lg btn-block">Perimetro</button>
+                       </form>
+                </div>
+            </div>
+
+            <button class="btn btn-outline-danger btn-area" data-figura="triangulo">Area</button>
+            <div class="area" data-figura="triangulo">
+                <div class="contenido">
+                    <span class="cerrar-modal">X</span>
+                    <h2>Area de triángulo</h2>
+                    <form action="">
+
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="altura" id="altura" value="">
+                            <label id="titulo">altura:</label>
+                        </div><br>
+
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="base" id="base" value="">
+                            <label id="titulo">base:</label>
+                        </div><br>
+                
+                            <button id="boton" onclick="areaTriangulo()" class="btn btn-danger btn-lg btn-block">Area</button>
+                       </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="rectangulo">
+            <img src="../img/rectangulo.jpg" class="figura3" alt=""><br>
+            <button class="btn btn-outline-success btn-perimetro" data-figura="rectangulo">Perimetro</button>
+            <div class="perimetro" data-figura="rectangulo">
+                <div class="contenido">
+                    <span class="cerrar-modal">X</span>
+                    <h2>Perimetro de rectangulo</h2>
+                    <form action="">
+
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="altura" id="altura" value="">
+                            <label id="titulo">altura:</label>
+                        </div><br>
+
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="base" id="base" value="">
+                            <label id="titulo">base:</label>
+                        </div><br>
+                
+                            <button id="boton" onclick="perimetroRectangulo()" class="btn btn-danger btn-lg btn-block">Perimetro</button>
+                       </form>
+                </div>
+            </div>
+            <button class="btn btn-outline-danger btn-area" data-figura="rectangulo">Area</button>
+            <div class="area" data-figura="rectangulo">
+                <div class="contenido">
+                    <span class="cerrar-modal">X</span>
+                    <h2>Area de rectangulo</h2>
+                    <form action="">
+
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="largo" id="largo" value="">
+                            <label id="titulo">largo:</label>
+                        </div><br>
+
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="ancho" id="ancho" value="">
+                            <label id="titulo">ancho:</label>
+                        </div><br>
+                
+                            <button id="boton" onclick="areaRectangulo()" class="btn btn-danger btn-lg btn-block">Area</button>
+                       </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="circulo">
+            <img src="../img/circulo.jpg" class="figura4" alt=""><br>
+            <button class="btn btn-outline-success btn-perimetro" data-figura="circulo">Perimetro</button>
+            <div class="perimetro" data-figura="circulo">
+                <div class="contenido">
+                    <span class="cerrar-modal">X</span>
+                    <h2>Perimetro de círculo</h2>
+                    <form action="">
+
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="diametro" id="diametro" value="">
+                            <label id="titulo">diametro:</label>
+                        </div><br>
+                
+                            <button id="boton" onclick="perimetroCirculo()" class="btn btn-danger btn-lg btn-block">Perimetro</button>
+                       </form>
+                </div>
+            </div>
+            
+            <button class="btn btn-outline-danger btn-area" data-figura="circulo">Area</button>
+            <div class="area" data-figura="circulo">
+                <div class="contenido">
+                    <span class="cerrar-modal">X</span>
+                    <h2>Area de círculo</h2>
+                    <form action="">
+
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="radio" id="radio" value="">
+                            <label id="titulo">radio:</label>
+                        </div><br>
+                
+                            <button id="boton" onclick="areaCirculo()" class="btn btn-danger btn-lg btn-block">Area</button>
+                       </form>
+                </div>
+            </div>
+        </div><br>
+
+        <footer>
+            <p class="">TODOS LOS DERECHOS DE DISEÑO RESERVADOS A  BOOTSTRAP</p>
+            <p class="">AUTOR:MATEO SUAREZ</p>
+        </footer>
+    </header>
+
+    <script src="../js/figuras.js"></script>
+</body>
+</html>
