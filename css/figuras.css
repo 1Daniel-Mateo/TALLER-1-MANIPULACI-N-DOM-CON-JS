@@ -1,0 +1,101 @@
+/*cuadrado*/
+
+.cuadrado{
+    background-color: rgba(0, 0, 0, 0.803);
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 45px;
+}
+
+
+.triangulo{
+    background-color: rgba(0, 0, 0, 0.803);
+    margin: -320px 340px;
+    width: 300px;
+    height: 300px;
+    border-radius: 45px;
+}
+
+.rectangulo{
+    background-color: rgba(0, 0, 0, 0.803);
+    margin: 20px 660px;   
+    width: 300px;
+    height: 300px;
+    border-radius: 45px;
+}
+
+.circulo{
+    background-color: rgba(0, 0, 0, 0.803);
+    margin-top: -320px;
+    margin-left: 980px;
+    width: 300px;
+    height: 300px;
+    border-radius: 45px;
+}
+
+.cuadrado > .figura1{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.triangulo > .figura2{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.rectangulo > .figura3{
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+.circulo > .figura4{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+}
+
+button{
+    margin: 20px;
+}
+
+/* Estilos para los contenedores de modal */
+.perimetro,
+.area {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* Estilos para el contenido del modal */
+.contenido {
+  background-color: white;
+  width: 400px;
+  max-width: 90%;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Estilos para el botón de cerrar modal */
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
